@@ -25,6 +25,10 @@ Example:
 "0","1550724000","Sat Apr 18 07:04:07 PDT 2009","NO_QUERY","trwiles","Wishing I was going to play golf today. Yard work instead. YAY "
 
 The project was built using Scala 2.10.6 and Spark version 1.6.0 for supporting the distributed computation.
+In order to run in the local environment. The application expects two arguments: 
+ - Dataset path
+ - output directory
+Also some paths might be modified on the PrParameters.scala file.
 
 - MainSentiment.scala : Object that is in charge of calling to the different methods for applying the preprocessing, the sentiment analysis tasks and building the dictionaries containing the words that are not part of the lexicon using both methods. It writes the following files as outputs :
   - sentimentDataset.csv: file that contains the dataset after applying the preprocessing and sentiment analysis tasks. The output format uses the character separator ",".
